@@ -1,0 +1,753 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+  <!--<title>HA Mobile</title>-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--&lt;!&ndash; Bootstrap &ndash;&gt;-->
+  <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>-->
+  <!--<link rel="stylesheet" href="css/typography.css"/>-->
+  <!--<link rel="stylesheet" href="css/glyphicons.css"/>-->
+  <!--<link rel="stylesheet" href="css/custom.css"/>-->
+  <!--&lt;!&ndash; HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries &ndash;&gt;-->
+  <!--&lt;!&ndash; WARNING: Respond.js doesn't work if you view the page via file:// &ndash;&gt;-->
+  <!--&lt;!&ndash;[if lt IE 9]>-->
+  <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
+  <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>-->
+
+  <!--<![endif]&ndash;&gt;-->
+  <!--&lt;!&ndash; jQuery (necessary for Bootstrap's JavaScript plugins) &ndash;&gt;-->
+  <!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>-->
+  <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+  <!--<script type="text/javascript" src="js/custom.js"></script>-->
+  <!--<script type="text/javascript" src="js/sidebar.js"></script>-->
+  <!--&lt;!&ndash; Include all compiled plugins (below), or include individual files as needed &ndash;&gt;-->
+
+<!--</head>-->
+<!--<body>-->
+<div class="row" id="slotInventory">
+  <div class="col-sm-3">
+    <h5>Tournament Builder</h5>
+    <div class="filterWrapper">
+      <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-black glyphicons filter btn-icon white"><i></i></button>
+        </span>
+      </div>
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <div class="filterResults relative btnGroup">
+        <div class="btn-groupSpecial">
+          <a class="results-control col-xs-4" href="#">active</a>
+          <a class="results-control col-xs-4" href="#">inactive</a>
+          <a class="results-control col-xs-4" href="#">all</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <h5>Tournament Details</h5>
+    <div class="row clearfix relative btnGroup btnGroup3">
+      <div class="col-md-12 clearfix">
+        <div class="tabControls">
+          <ul class="nav nav-tabs">
+            <li class="active col-xsm-7"><a href="#detailsTab" data-toggle="tab">Details</a></li>
+            <li class="col-xsm-3"><a href="#messageTab" data-toggle="tab">Messages</a></li>
+          </ul>
+          <div class="tab-content">
+
+            <!--Detail Tab Starts-->
+            <div class="tab-pane active" id="detailsTab">
+              <div class="">
+                <div class="tabbable tabs-left">
+                  <ul class="nav nav-tabs">
+                    <li class="active col-xsm-5"><a href="#overviewTab" data-toggle="tab">Overview</a></li>
+                    <li class="col-xsm-5"><a href="#definitionTab" data-toggle="tab">Definition</a></li>
+                    <li class="col-xsm-5"><a href="#scheduleTab" data-toggle="tab">Schedule</a></li>
+                    <li class="col-xsm-5"><a href="#locationTab" data-toggle="tab">Location</a></li>
+                    <li class="col-xsm-5"><a href="#populationTab" data-toggle="tab">Population</a></li>
+                  </ul>
+                  <div class="tab-content">
+
+                    <!--Overview Tab Starts-->
+                    <div class="tab-pane fade in active" id="overviewTab">
+                      <div class="tab-container clearfix">
+                        <div class="col-md-12">
+                          <h5 class="heading highlighted">Definition - Incomplete</h5>
+                          <p class="bullet">November 2013 Tournament is a Floorwide Monthly Tournament with the top 50 players in the money.</p>
+                          <p class="bullet">Points are based on Coin In, requiring 10 Coin In to earn 1 Point.</p>
+                          <p class="bullet highlighted">Awards for the top 50 players are incomplete, with only 35 positions assigned an award.</p>
+                          <h5 class="heading">Schedule - Complete</h5>
+                          <p class="bullet">The tournament is scheduled to start at 12:00 AM on December 1, 2013, and end at 11:59 PM on December 31, 2013.</p>
+                          <p class="bullet">The tournament is active: Mondays from 9:00 AM to 3:00 PM, Tuesdays from 9:00 AM to 3:00 PM, Wednesdays from 9:00 AM to 3:00 PM, and Thursdays from 9:00 AM to 3:00 PM.</p>
+                          <h5 class="heading">Location - Complete</h5>
+                          <p class="bullet">The tournament is NOT floor wide.</p>
+                          <p class="bullet">The tournament is limited to 2 Areas, 2 Sections, and 740 Positions.</p>
+                          <h5 class="heading">Population - Complete</h5>
+                          <p class="bullet">The tournament is NOT open to all players.</p>
+                          <p class="bullet">The tournament is limited to 2 Tiers and 43,001 specific players.</p>
+                          <h5 class="heading highlighted">Messages - Incomplete</h5>
+                          <p class="bullet">The tournament has leaderboard messaging defined.</p>
+                          <p class="bullet">The tournament has Proximity End Messaging defined.</p>
+                          <p class="bullet highlighted">The tournament does NOT have Celebration Messaging defined.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Overview Tab Ends-->
+
+                    <!--Definition Tab Starts-->
+                    <div class="tab-pane fade" id="definitionTab">
+                      <div class="tab-container clearfix">
+                        <div class="col-md-4">
+                          <label for="definitionTournamentName">Tournament Name</label>
+                          <input type="text" id="definitionTournamentName" class="form-control"/>
+                          <label for="definitionTournamentDesc">Tournament Description</label>
+                          <input type="text" id="definitionTournamentDesc" class="form-control"/>
+                          <label for="definitionLeaderboardPosition">Leaderboard Position</label>
+                          <input type="text" id="definitionLeaderboardPosition" class="form-control"/>
+                          <label for="definitionLeaderboardBasis">Tournament Leaderboard Basis</label>
+                          <select name="definitionLeaderboardBasis" id="definitionLeaderboardBasis" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                          <label for="definitionCalFactor">Point Calculation Factor</label>
+                          <input type="text" id="definitionCalFactor" class="form-control"/>
+                          <label for="definitionCalEx">Example Calculation</label>
+                          <textarea name="definitionCalEx" id="definitionCalEx" class="form-control"></textarea>
+                          <label for="definitionAwardValue">Leaderboard Award Value</label>
+                          <input type="text" id="definitionAwardValue" class="form-control"/>
+                        </div>
+                        <div class="col-md-8">
+                          <label>Tournament Awards</label>
+                          <div class="progress">
+                            <div style="width: 70%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar" class="progress-bar progress-bar-success">
+                              <span class="sr-only">35 of 50 Assigned</span>
+                            </div>
+                          </div>
+                          <table class="table">
+                            <thead>
+                            <tr><td>Leaderboard Position</td><td>Leaderboard Award</td><td>&nbsp;</td></tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>Position</td><td>Award</td><td class="glyphicons edit"><i></i></td>
+                            </tr>
+                            <tr>
+                              <td>Position</td><td>Award</td><td class="glyphicons edit"><i></i></td>
+                            </tr>
+                            <tr>
+                              <td>Position</td><td>Award</td><td class="glyphicons edit"><i></i></td>
+                            </tr>
+                            <tr>
+                              <td>Position</td><td>Award</td><td class="glyphicons edit"><i></i></td>
+                            </tr>
+                            <tr>
+                              <td>Position</td><td>Award</td><td class="glyphicons edit"><i></i></td>
+                            </tr>
+                            <tr>
+                              <td>Position</td><td>Award</td><td class="glyphicons edit"><i></i></td>
+                            </tr>
+                            <tr>
+                              <td>Position</td><td>Award</td><td class="glyphicons edit"><i></i></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Definition Tab Ends-->
+
+                    <!--Schedule Tab Start-->
+                    <div class="tab-pane fade" id="scheduleTab">
+                      <div class="tab-container clearfix">
+                        <div class="col-md-4">
+                          <div class="filterWrapper">
+                            <div class="input-group">
+                              <input type="text" class="form-control">
+                              <span class="input-group-btn">
+                                <button class="btn btn-black glyphicons filter btn-icon white" type="button"><i></i></button>
+                              </span>
+                            </div>
+                            <select class="form-control">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                            </select>
+                            <div class="filterResults relative btnGroup">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <label for="scheduleName">Schedule Name</label>
+                          <input type="text" id="scheduleName" class="form-control"/>
+                          <div class="fieldset">
+                            <fieldset>
+                              <legend><label>Schedule</label></legend>
+                              <div class="col-xs-6">
+                                <div class="clearfix calTime">
+                                  <div class="col-xs-3">
+                                    <label for="scheduleFrom">From</label>
+                                  </div>
+                                  <div class="col-xs-9">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control datePickers" id="scheduleFrom">
+                                      <span class="input-group-addon calendar"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="clearfix calTime">
+                                  <div class="col-xs-3">
+                                    <label for="scheduleTo">To</label>
+                                  </div>
+                                  <div class="col-xs-9">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control datePickers" id="scheduleTo">
+                                      <span class="input-group-addon calendar"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-6">
+                                <div class="clearfix calTime">
+                                  <div class="col-xs-3">
+                                    <label for="scheduleFromAt">At</label>
+                                  </div>
+                                  <div class="col-xs-9">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control timePickers" id="scheduleFromAt">
+                                      <span class="input-group-addon time"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="clearfix calTime">
+                                  <div class="col-xs-3">
+                                    <label for="scheduleToAt">At</label>
+                                  </div>
+                                  <div class="col-xs-9">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control timePickers" id="scheduleToAt">
+                                      <span class="input-group-addon time"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 clearfix">
+                                <div class="col-xs-12">
+                                  <input type="radio" id="acrossWin" name="activeWindow"/><label for="acrossWin">Active Across Event Window</label>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 clearfix">
+                                <div class="col-xs-12">
+                                  <input type="radio" id="acrossWith" name="activeWindow"/><label for="acrossWith">Active Within Event Window</label>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
+                          <div class="fieldset nomargin">
+                            <fieldset>
+                              <legend><input type="checkbox" id="scheduleByDay" class="control"><label for="scheduleByDay" class="controlLabel">Schedule by Day of Week</label></legend>
+                              <table class="table scheduleTable fieldSwitch">
+                                <tbody>
+                                <tr>
+                                  <td>
+                                    <input type="checkbox" id="scheduleMonday"><label for="scheduleMonday">Monday</label>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleMondayFrom">From</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleMondayFrom">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleMondayTo">To</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleMondayTo">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input type="checkbox" id="scheduleTues"><label for="scheduleTues">Tuesday</label>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleTuesFrom">From</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleTuesFrom">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleTuesTo">To</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleTuesTo">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input type="checkbox" id="scheduleWed"><label for="scheduleWed">Wednesday</label>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleWedFrom">From</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleWedFrom">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleWedTo">To</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleWedTo">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input type="checkbox" id="scheduleThus"><label for="scheduleThus">Thursday</label>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleThusFrom">From</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleThusFrom">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleThusTo">To</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleThusTo">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input type="checkbox" id="scheduleFri"><label for="scheduleFri">Friday</label>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleFriFrom">From</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleFriFrom">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleFriTo">To</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleFriTo">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input type="checkbox" id="scheduleSat"><label for="scheduleSat">Saturday</label>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleSatFrom">From</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleSatFrom">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleSatTo">To</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleSatTo">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input type="checkbox" id="scheduleSun"><label for="scheduleSun">Sunday</label>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleSunFrom">From</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleSunFrom">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <label class="pull-left" for="scheduleSunTo">To</label>
+                                    <div class="pull-right">
+                                      <div class="input-group">
+                                        <input type="text" class="form-control timePickers" id="scheduleSunTo">
+                                        <span class="input-group-addon time"></span>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Schedule Tab Ends-->
+
+                    <!--Location Tab Starts-->
+                    <div class="tab-pane fade" id="locationTab">
+                      <div class="">
+                        <div class="tabbable tabs-left">
+                          <ul class="nav nav-tabs">
+                            <li class="active col-xsm-32"><a data-toggle="tab" href="#locationAreaTab">Area</a></li>
+                            <li class="col-xsm-32"><a data-toggle="tab" href="#locationSectionTab">Section</a></li>
+                            <li class="col-xsm-32"><a data-toggle="tab" href="#locationPositionTab">Position</a></li>
+                          </ul>
+                          <div class="tab-content">
+
+                            <!--Location Area Tab Starts-->
+                            <div id="locationAreaTab" class="tab-pane fade in active">
+                              <div class="tab-container clearfix">
+                                <div class="col-md-12">
+                                  <div class="fieldset">
+                                    <fieldset>
+                                      <legend><input type="checkbox" class="control" id="locationAreaAllCardedPlayer"><label class="controlLabel" for="locationAreaAllCardedPlayer">All Carded Players</label></legend>
+                                      <div class="row fieldSwitch">
+                                        <div class="col-md-12">
+                                          <div class="col-md-12">
+                                            <label>Areas</label>
+                                          </div>
+                                        </div>
+                                        <select multiple="multiple" size="10" name="duallistbox_areaListBox" class='areaListBox col-md-12'>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3" selected="selected">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6" selected="selected">Option 6</option>
+                                          <option value="option7">Option 7</option>
+                                          <option value="option8">Option 8</option>
+                                          <option value="option9">Option 9</option>
+                                          <option value="option10">Option 10</option>
+                                          <option value="option11">Option 11</option>
+                                          <option value="option12">Option 12</option>
+                                          <option value="option13">Option 13</option>
+                                          <option value="option14">Option 14</option>
+                                        </select>
+                                      </div>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Location Area Tab Ends-->
+
+                            <!--Location Section Tab Starts-->
+                            <div id="locationSectionTab" class="tab-pane fade">
+                              <div class="tab-container clearfix">
+                                <div class="col-md-12">
+                                  <div class="fieldset">
+                                    <fieldset>
+                                      <legend><input type="checkbox" class="control" id="locationSectionAllCardedPlayer"><label class="controlLabel" for="locationSectionAllCardedPlayer">All Carded Players</label></legend>
+                                      <div class="row fieldSwitch">
+                                        <div class="col-md-12">
+                                          <div class="col-md-12">
+                                            <label>Sections</label>
+                                          </div>
+                                        </div>
+                                        <select multiple="multiple" size="10" name="duallistbox_sectionsListBox" class='sectionsListBox col-md-12'>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3" selected="selected">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6" selected="selected">Option 6</option>
+                                          <option value="option7">Option 7</option>
+                                          <option value="option8">Option 8</option>
+                                          <option value="option9">Option 9</option>
+                                          <option value="option10">Option 10</option>
+                                          <option value="option11">Option 11</option>
+                                          <option value="option12">Option 12</option>
+                                          <option value="option13">Option 13</option>
+                                          <option value="option14">Option 14</option>
+                                        </select>
+                                      </div>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Location Section Tab Ends-->
+
+                            <!--Location Position Tab Starts-->
+                            <div id="locationPositionTab" class="tab-pane fade">
+                              <div class="tab-container clearfix">
+                                <div class="col-md-12">
+                                  <div class="fieldset">
+                                    <fieldset>
+                                      <legend><input type="checkbox" class="control" id="locationPositionAllCardedPlayer"><label class="controlLabel" for="locationPositionAllCardedPlayer">All Carded Players</label></legend>
+                                      <div class="row fieldSwitch">
+                                        <div class="col-md-12">
+                                          <div class="col-md-12">
+                                            <label>Positions</label>
+                                          </div>
+                                        </div>
+                                        <select multiple="multiple" size="10" name="duallistbox_positionListBox" class='positionListBox col-md-12'>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3" selected="selected">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6" selected="selected">Option 6</option>
+                                          <option value="option7">Option 7</option>
+                                          <option value="option8">Option 8</option>
+                                          <option value="option9">Option 9</option>
+                                          <option value="option10">Option 10</option>
+                                          <option value="option11">Option 11</option>
+                                          <option value="option12">Option 12</option>
+                                          <option value="option13">Option 13</option>
+                                          <option value="option14">Option 14</option>
+                                        </select>
+                                      </div>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Location Position Tab Ends-->
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Location Tab Ends-->
+
+                    <!--Population Tab Starts-->
+                    <div class="tab-pane fade" id="populationTab">
+                      <div class="">
+                        <div class="tabbable tabs-left">
+                          <ul class="nav nav-tabs">
+                            <li class="active col-xsm-2"><a data-toggle="tab" href="#populationTiersTab">Tiers</a></li>
+                            <li class="col-xsm-2"><a data-toggle="tab" href="#populationListTab">List</a></li>
+                          </ul>
+                          <div class="tab-content">
+                            <div id="populationTiersTab" class="tab-pane fade in active">
+                              <div class="tab-container clearfix">
+                                <div class="col-md-12">
+                                  <div class="fieldset">
+                                    <fieldset>
+                                      <legend><input type="checkbox" class="control" id="populationAllTiers"><label class="controlLabel" for="populationAllTiers">All Tiers</label></legend>
+                                      <div class="row fieldSwitch">
+                                        <div class="col-md-12">
+                                          <div class="col-md-12">
+                                            <label>Tiers</label>
+                                          </div>
+                                        </div>
+                                        <select multiple="multiple" size="10" name="duallistbox_tiersListBox" class='tiersListBox col-md-12'>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3" selected="selected">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6" selected="selected">Option 6</option>
+                                          <option value="option7">Option 7</option>
+                                          <option value="option8">Option 8</option>
+                                          <option value="option9">Option 9</option>
+                                          <option value="option10">Option 10</option>
+                                          <option value="option11">Option 11</option>
+                                          <option value="option12">Option 12</option>
+                                          <option value="option13">Option 13</option>
+                                          <option value="option14">Option 14</option>
+                                        </select>
+                                      </div>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="populationListTab" class="tab-pane fade">
+                              <div class="tab-container clearfix">
+                                <div class="col-md-12">
+                                  <div class="fieldset">
+                                    <fieldset>
+                                      <legend><input type="checkbox" class="control" id="populationAllPlayer"><label class="controlLabel" for="populationAllPlayer">All Players</label></legend>
+                                      <div class="row fieldSwitch">
+                                        <div class="col-md-12">
+                                          <div class="col-md-12">
+                                            <label>Players</label>
+                                          </div>
+                                        </div>
+                                        <select multiple="multiple" size="10" name="duallistbox_populationPlayersListBox" class='populationPlayersListBox col-md-12'>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3" selected="selected">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6" selected="selected">Option 6</option>
+                                          <option value="option7">Option 7</option>
+                                          <option value="option8">Option 8</option>
+                                          <option value="option9">Option 9</option>
+                                          <option value="option10">Option 10</option>
+                                          <option value="option11">Option 11</option>
+                                          <option value="option12">Option 12</option>
+                                          <option value="option13">Option 13</option>
+                                          <option value="option14">Option 14</option>
+                                        </select>
+                                      </div>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Population Tab Ends-->
+                  </div>
+                </div>
+              </div>
+              <!--<p>Details default content goes here...</p>-->
+            </div>
+            <!--Details Tab Ends-->
+
+
+            <!--Message Tab Starts-->
+            <div class="tab-pane" id="messageTab">
+              <div class="">
+                <div class="tabbable tabs-left">
+                  <ul class="nav nav-tabs">
+                    <li class="active col-xsm-32"><a href="#leaderBoardTab" data-toggle="tab">LeaderBoard</a></li>
+                    <li class="col-xsm-32"><a href="#endTab" data-toggle="tab">End</a></li>
+                    <li class="col-xsm-32"><a href="#celebrationTab" data-toggle="tab">Celebration</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="leaderBoardTab">
+                      <p>LeaderBoard content...</p>
+                    </div>
+                    <div class="tab-pane fade" id="endTab">
+                      <p>End content...</p>
+                    </div>
+                    <div class="tab-pane fade" id="celebrationTab">
+                      <p>Celebration content...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>Default content inside Message container...</p>
+            </div>
+            <!--Message Tab Ends-->
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 btnGroup2">
+        <div class="btn-groupSpecial clearfix">
+          <a href="#" class="results-control col-xsm-5">active</a>
+          <a href="#" class="results-control col-xsm-5">copy</a>
+          <a href="#" class="results-control col-xsm-5">save</a>
+          <a href="#" class="results-control col-xsm-5">cancel</a>
+          <a href="#" class="results-control col-xsm-5">delete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<script type="text/javascript">-->
+  <!--$('#scheduleFrom').datepicker();-->
+<!--</script>-->
+<script>
+//  Area list box
+  var areaListBox = $('.areaListBox').bootstrapDualListbox({
+    nonselectedlistlabel: 'Exclude',
+    selectedlistlabel: 'Include',
+    preserveselectiononmove: 'moved',
+    moveonselect: false
+  });
+
+//  Section list box
+var sectionsListBox = $('.sectionsListBox').bootstrapDualListbox({
+  nonselectedlistlabel: 'Exclude',
+  selectedlistlabel: 'Include',
+  preserveselectiononmove: 'moved',
+  moveonselect: false
+});
+
+//  Position list box
+var positionListBox = $('.positionListBox').bootstrapDualListbox({
+  nonselectedlistlabel: 'Exclude',
+  selectedlistlabel: 'Include',
+  preserveselectiononmove: 'moved',
+  moveonselect: false
+});
+
+//Population player list box
+var populationPlayersListBox = $('.populationPlayersListBox').bootstrapDualListbox({
+  nonselectedlistlabel: 'Exclude',
+  selectedlistlabel: 'Include',
+  preserveselectiononmove: 'moved',
+  moveonselect: false
+});
+
+//  Tier list box
+var tiersListBox = $('.tiersListBox').bootstrapDualListbox({
+  nonselectedlistlabel: 'Exclude',
+  selectedlistlabel: 'Include',
+  preserveselectiononmove: 'moved',
+  moveonselect: false
+});
+
+//  Inactive Fieldset
+var fieldSwitch = $('.fieldSwitch');
+var legendSwitch = $('.fieldset legend input');
+fieldSwitch.find('input, select').prop('disabled', true);
+legendSwitch.on('click', function(){
+  if($(this).is(':checked')){
+    $(this).parent().next('.fieldSwitch').find('input, select').prop('disabled', false);
+  }
+  else{
+    $(this).parent().next('.fieldSwitch').find('input, select').prop('disabled', true);
+  }
+});
+
+
+//  Date Picker
+$('.datePickers').datepicker();
+
+//  Time Picker
+$('.timePickers').timepicker();
+</script>
+<!--</body>-->
+<!--</html>-->

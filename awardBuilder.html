@@ -1,0 +1,161 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+  <!--<title>HA Mobile</title>-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--&lt;!&ndash; Bootstrap &ndash;&gt;-->
+  <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>-->
+  <!--<link rel="stylesheet" href="css/typography.css"/>-->
+  <!--<link rel="stylesheet" href="css/glyphicons.css"/>-->
+  <!--<link rel="stylesheet" href="css/custom.css"/>-->
+  <!--&lt;!&ndash; HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries &ndash;&gt;-->
+  <!--&lt;!&ndash; WARNING: Respond.js doesn't work if you view the page via file:// &ndash;&gt;-->
+  <!--&lt;!&ndash;[if lt IE 9]>-->
+  <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
+  <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>-->
+
+  <!--<![endif]&ndash;&gt;-->
+  <!--&lt;!&ndash; jQuery (necessary for Bootstrap's JavaScript plugins) &ndash;&gt;-->
+  <!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>-->
+  <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+  <!--<script type="text/javascript" src="js/custom.js"></script>-->
+  <!--<script type="text/javascript" src="js/sidebar.js"></script>-->
+  <!--&lt;!&ndash; Include all compiled plugins (below), or include individual files as needed &ndash;&gt;-->
+
+<!--</head>-->
+<!--<body>-->
+<div class="row">
+  <div class="col-md-3">
+    <h5>Award Builder</h5>
+    <div class="filterWrapper">
+      <div class="input-group">
+        <input type="text" class="form-control">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-black glyphicons filter btn-icon white"><i></i></button>
+            </span>
+      </div>
+      <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <div class="filterResults relative btnGroup">
+        <div class="btn-groupSpecial">
+          <a class="results-control col-xs-4" href="#">active</a>
+          <a class="results-control col-xs-4" href="#">inactive</a>
+          <a class="results-control col-xs-4" href="#">all</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <h5>Award Details</h5>
+    <div class="row clearfix relative btnGroup">
+      <div class="col-md-4">
+        <form action="#" class="form-group">
+          <label for="awardName">Award Name</label>
+          <input type="text" id="awardName" class="form-control"/>
+          <label for="awardDesc">Award Description</label>
+          <textarea name="awardDesc" id="awardDesc" class="form-control"></textarea>
+          <label for="awardType">Award Type</label>
+          <select name="awardType" id="awardType" class="form-control">
+            <option value="1">type 1</option>
+            <option value="2">type 2</option>
+            <option value="3">type 3</option>
+          </select>
+          <label for="awardQnty">Award Quantity</label>
+          <input type="text" id="awardQnty" class="form-control"/>
+          <label for="awardValue">Award Value</label>
+          <input type="text" id="awardValue" class="form-control"/>
+        </form>
+      </div>
+      <div class="col-md-8">
+        <div class="fieldset">
+          <form>
+            <fieldset>
+              <legend><input type="checkbox" class="control" id="control"><label class="controlLabel" for="control">Define Explanation</label></legend>
+              <div class="clearfix fieldSwitch">
+                <div class="col-sm-5">
+                  <input type="radio" id="fixed-ex" name="explanation">
+                  <label for="fixed-ex">Fixed Explanation</label>
+                  <input type="radio" id="rolling-ex" name="explanation">
+                  <label for="rolling-ex">Rolling Explanation</label>
+                </div>
+                <div class="col-sm-7">
+                  <label for="exCount">Count</label>
+                  <input type="text" class="form-control" id="exCount"/>
+                  <label for="exPeriod">Period</label>
+                  <select name="exPeriod" id="exPeriod" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><input type="checkbox" class="control" id="defineControl"><label class="controlLabel" for="defineControl">Define Barcode</label></legend>
+              <div class="clearfix fieldSwitch">
+                <div class="col-sm-6">
+                  <input type="checkbox" id="tournament" name="tournament">
+                  <label for="tournament">Tournament ID</label>
+                  <input type="checkbox" id="promotion" name="promotion">
+                  <label for="promotion">Promotion Event Award</label>
+                </div>
+                <div class="col-sm-6">
+                  <input type="checkbox" id="player" name="player">
+                  <label for="player">Player ID</label>
+                  <input type="checkbox" id="redemption" name="redemption">
+                  <label for="redemption">Redemption ID</label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="fieldset">
+          <form>
+            <fieldset>
+              <legend><input type="checkbox" class="control" id="defineControlText"><label class="controlLabel" for="defineControlText">Define Barcode</label></legend>
+              <div class="clearfix fieldSwitch">
+                <label for="disclaimerText">Disclaimer Text</label>
+                <textarea name="disclaimerText" id="disclaimerText" class="form-control ruledText"></textarea>
+                <label for="finePrintText">Fine Print</label>
+                <textarea name="finePrintText" id="finePrintText" class="form-control ruledText"></textarea>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="relative">
+          <div class="btn-groupSpecial btn-group2Special">
+            <a href="#" class="results-control col-xsm-5">active</a>
+            <a href="#" class="results-control col-xsm-5">copy</a>
+            <a href="#" class="results-control col-xsm-5">save</a>
+            <a href="#" class="results-control col-xsm-5">cancel</a>
+            <a href="#" class="results-control col-xsm-5">delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  //  Inactive Fieldset
+  var fieldSwitch = $('.fieldSwitch');
+  var legendSwitch = $('.fieldset legend input');
+  fieldSwitch.find('input, select, textarea').prop('disabled', true);
+  legendSwitch.on('click', function(){
+    if($(this).is(':checked')){
+      $(this).parent().next('.fieldSwitch').find('input, select, textarea').prop('disabled', false);
+    }
+    else{
+      $(this).parent().next('.fieldSwitch').find('input, select, textarea').prop('disabled', true);
+    }
+  });
+</script>
+<!--</body>-->
+<!--</html>-->
